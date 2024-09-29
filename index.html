@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moksh's Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            transition: background 0.5s, color 0.5s;
+        }
+        header, footer {
+            text-align: center;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .resume-section {
+            padding: 15px;
+            max-width: 700px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        button {
+            padding: 8px 16px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #ffffff;
+            color: #2c3e50;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #dddddd;
+        }
+        .color-controls {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            color: #dcdcdc;
+            font-weight: 600;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                font-size: 14px;
+            }
+            header, footer {
+                padding: 10px;
+            }
+            .resume-section {
+                padding: 10px;
+            }
+            button {
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Moksh's Resume</h1>
+    </header>
+
+    <div class="color-controls">
+        <button onclick="changeBackground('#2c3e50', '#4ca1af')">Default</button>
+        <button onclick="changeBackground('#1e3c72', '#2a5298')">Blue Shades</button>
+        <button onclick="changeBackground('#ff7e5f', '#feb47b')">Sunset</button>
+        <button onclick="changeBackground('#654ea3', '#eaafc8')">Purple Pink</button>
+        <button onclick="changeBackground('#000000', '#434343')">Dark Mode</button>
+    </div>
+
+    <section class="resume-section">
+        <h2>About Me</h2>
+        <p>
+            Programming is not just about writing code; it’s a medium to express creativity and solve real-world problems. <span class="highlight">I am a fast learner</span>, able to adapt quickly to new technologies and environments. My goal is to bring <span class="highlight">innovative solutions</span> to life and work on projects that make a difference. Learning from multiple sources beyond traditional education is a strength I’ve developed.
+        </p>
+        <p>
+            I’m <span class="highlight">observant</span>, hardworking, and motivated to continuously improve. I approach every project with dedication and attention to detail, ensuring <span class="highlight">high-quality results</span>. <span class="highlight">I’ve taught myself key skills</span> and excelled in problem-solving throughout my career.
+        </p>
+
+        <h2>Education</h2>
+        <p><strong>Bachelor of Computer Applications (BCA)</strong> - Expected Graduation: 2025</p>
+
+        <h2>Key Skills</h2>
+        <ul>
+            <li><span class="highlight">HTML, CSS, JavaScript</span></li>
+            <li><span class="highlight">Python, C, C++, Java</span></li>
+            <li><span class="highlight">Product Quality Data Analysis</span></li>
+            <li>Database Management</li>
+            <li><span class="highlight">Product Design</span></li>
+            <li>Scrum and Agile Methodologies</li>
+        </ul>
+
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong>Online Note Holder</strong>: A web app allowing multi-device note management. Focused on <span class="highlight">usability</span> and efficiency.
+            </li>
+            <li>
+                <strong>20-Page Blog Site</strong>: Developed an interactive blog platform, <span class="highlight">improving user engagement</span> with features like commenting and liking.
+            </li>
+            <li>
+                <strong>Basic Python Games</strong>: Created simple yet engaging Python-based games, honing my skills in <span class="highlight">logic design</span> and algorithms.
+            </li>
+            <li>
+                <strong>Portfolio Website</strong>: Developed this website to highlight my projects and skills, demonstrating my front-end and back-end development skills.
+            </li>
+        </ul>
+
+        <h2>Work Experience</h2>
+        <p>
+            Although I don’t have formal work experience, my personal projects and participation in coding competitions have equipped me with a <span class="highlight">practical understanding</span> of coding and product design. I’m eager to apply my knowledge in a professional setting and <span class="highlight">contribute to innovative projects</span>.
+        </p>
+
+        <h2>Certifications</h2>
+        <ul>
+            <li>Certified Python Programmer</li>
+            <li>Web Development Bootcamp Completion</li>
+            <li>Data Structures and Algorithms Course Completion</li>
+        </ul>
+
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:kmoksh133@gmail.com">kmoksh133@gmail.com</a></p>
+        <p>Phone: <a href="tel:9466903310">9466903310</a></p>
+        <button onclick="window.open('https://kmoksh133.github.io/secuge/')">View My latest creation </button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Moksh. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function changeBackground(color1, color2) {
+            document.body.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
+        }
+    </script>
+</body>
+</html>
